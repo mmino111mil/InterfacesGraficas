@@ -22,4 +22,12 @@ public class PaisDAO {
     
     public List<Pais> all(){return null;}
     
+    public void printAll(){
+        for(Pais g : all() ){
+            System.out.println(g.getCode() + "-" + g.getNombre());
+        }
+    }
+    
+    public void close(){}
+        
 }
